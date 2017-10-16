@@ -1,0 +1,53 @@
+<ion-view title="MUSICQUITOUS" id="page1">
+  <ion-content padding="true" class="has-header">
+    <div class="main_top_img" style="margin-left: -10px; width: calc(100% + 20px); margin-top:-10px">
+      <img src="img/drumer.png" style="display: block; width: 100%; height: 150px; margin-left: auto; margin-right: auto;">
+    </div>
+     <ion-refresher on-refresh="doRefresh()"></ion-refresher> 
+     <div id="mUSICQUITOUS-container1">
+      <h4 id="mUSICQUITOUS-heading2" style="color:#423232;font-weight:400;">人気 音源合奏 ▷</h4>
+      <ion-list id="mUSICQUITOUS-list16">
+        <ion-item class="item-thumbnail-left assertive" id="mUSICQUITOUS-list-item7" ui-sref="menu.Recording({boarderId : List.boardsList[0].id})">
+          <img src="https://harmony-project-chonahoom.c9users.io/midi/{{List.midiList[List.boardsList[0].midi_id-1].path}}/{{List.midiList[List.boardsList[0].midi_id-1].img}}">
+          <h2assertive>1 {{List.boardsList[0].subject}}
+            <p style="white-space:normal;"> {{List.userList[List.boardsList[0].first_musician_id-1].user_id}} x {{List.userList[List.boardsList[0].writer_id-1].user_id}} <br>推薦数 {{List.boardsList[0].goods}}</p>
+          </h2assertive>
+        </ion-item>
+        <ion-item class="item-thumbnail-left assertive" id="mUSICQUITOUS-list-item18" ui-sref="menu.Recording({boarderId : List.boardsList[1].id})">
+          <img src="https://harmony-project-chonahoom.c9users.io/midi/{{List.midiList[List.boardsList[1].midi_id-1].path}}/{{List.midiList[List.boardsList[1].midi_id-1].img}}">
+          <h2assertive>2 {{List.boardsList[1].subject}}
+            <p style="white-space:normal;"> {{List.userList[List.boardsList[1].first_musician_id-1].user_id}} x {{List.userList[List.boardsList[1].writer_id-1].user_id}} <br>推薦数 {{List.boardsList[1].goods}}</p>
+          </h2assertive>
+        </ion-item>
+        <ion-item class="item-thumbnail-left assertive" id="mUSICQUITOUS-list-item19" ui-sref="menu.Recording({boarderId : List.boardsList[2].id})">
+          <img src="https://harmony-project-chonahoom.c9users.io/midi/{{List.midiList[List.boardsList[2].midi_id-1].path}}/{{List.midiList[List.boardsList[2].midi_id-1].img}}">
+          <h2assertive>3 {{List.boardsList[2].subject}}
+            <p> {{List.userList[List.boardsList[2].first_musician_id-1].user_id}} x {{List.userList[List.boardsList[2].writer_id-1].user_id}} <br>推薦数 {{List.boardsList[2].goods}}</p>
+          </h2assertive>
+        </ion-item>
+      </ion-list>
+    </div>
+    <div id="mUSICQUITOUS-container3">
+      <h4 id="mUSICQUITOUS-heading3" style="color:#423232;font-weight:400;">人気 作曲合奏 ▷</h4>
+      <ion-list id="mUSICQUITOUS-list17">
+        <ion-item class="item-thumbnail-left assertive">
+          <img src="img/s6CNQOyIS8uTIsI24ROZ__.PNG">
+          <h2assertive>1</h2assertive>
+          レッドベルベッ-真っ赤な味
+        </ion-item>
+        <ion-item class="item-thumbnail-left assertive" id="mUSICQUITOUS-list-item20">
+          <img src="img/py3DcCFSSieTEYuosfaw__.PNG">
+          <h2assertive>2 ヘイズ-雨に来てので
+            <p style="white-space:normal;">夏梅雨に雰囲気に！</p>
+          </h2assertive>
+        </ion-item>
+        <ion-item class="item-thumbnail-left assertive" id="mUSICQUITOUS-list-item21">
+          <img src="img/jGmvPyOReyXzjz3uH4Qg_-Artist.PNG">
+          <h2assertive>3 Zico-Artist
+            <p>지아코 아티스트!</p>
+          </h2assertive>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,65 @@
+<ion-view title="player" id="page11">
+  <ion-content padding="true" class="has-header">
+    <div id="player-button-bar5" class="button-bar">
+      <a ui-sref="menu.album()" id="player-button23" class="button button-positive button-block">曲リスト</a>
+      <button id="player-button24" class="button button-positive button-block">アルバムを修正</button>
+      <button id="player-button25" class="button button-positive button-block">音楽鑑賞</button>
+    </div>
+    <!-- <script type="text/javascript">
+    	window.onload = function () {
+ 			setValue();
+		}
+    </script> -->
+    
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/audioplayer.css">
+<ion-refresher on-refresh="doRefresh()"></ion-refresher>
+  <div class="player paused">
+  <div class="album">
+    <div class="cover">
+      <div><img src="https://harmony-project-chonahoom.c9users.io/midi/{{midi_path[now_play].path}}/{{midi_path[now_play].img}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;"></div>
+    </div>
+  </div>
+  
+  <div class="info">
+    <div class="time">
+      <span class="current-time">0:00</span>
+      <span class="progress"><span></span></span>
+      <span class="duration">0:00</span>
+    </div>
+    <script>
+    	
+    </script>
+    <h1>{{midi_music[now_play].subject}}</h1>
+    <h2>{{partician[now_play]}}</h2>
+  </div>
+  
+  <div class="actions">
+    <button class="shuffle">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="button rw" ui-sref="menu.player({album_id : album_id, music_id : now_play-1})">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="button play-pause">
+      <div class="arrow"></div>
+    </button>
+    <button class="button ff" ui-sref="menu.player({album_id : album_id, music_id : now_play+1})">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="repeat"></button>
+  </div>
+  
+
+      
+</div>
+  
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
+  </ion-content>
+</ion-view>

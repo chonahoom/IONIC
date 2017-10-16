@@ -1,0 +1,65 @@
+<ion-view title="게시글보기-Recording" id="page7">
+  <ion-content padding="true" class="has-header">
+    <div style="margin-left: -10px; width: calc(100% + 20px);">
+      
+    </div>
+    <h3 id="Recording-heading4" style="color:#000000;"></h3>
+    <h4 id="Recording-heading5" style="color:#000000;"></h4>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/audioplayer.css">
+
+  <div class="player paused">
+  <div class="album">
+    <div class="cover">
+      <div><img src="https://harmony-project-chonahoom.c9users.io/midi/{{Info.midi_info.path}}/{{Info.midi_info.img}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;"></div>
+    </div>
+  </div>
+  
+  <div class="info">
+    <div class="time">
+      <span class="current-time">0:00</span>
+      <span class="progress"><span></span></span>
+      <span class="duration">0:00</span>
+    </div>
+    
+    <h1>{{Info.board_info.subject}}</h1>
+    <h2>사랑하는 사람에게 불러주고픈</h2>
+  </div>
+  
+  <div class="actions">
+    <button class="shuffle">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="button rw">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="button play-pause">
+      <div class="arrow"></div>
+    </button>
+    <button class="button ff">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </button>
+    <button class="repeat"></button>
+  </div>
+ 
+
+
+  
+</div>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/audioplayer.js"></script>
+    
+    
+
+    <button id="Recording-button11" ng-click="goods(Info.board_info.id)" style="border-radius:-1px -1px -1px -1px;" class="button button-positive button-small button-block button-outline">좋아요 </button>
+  
+
+  </ion-content>
+</ion-view>

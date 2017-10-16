@@ -1,0 +1,19 @@
+<ion-view title="Album" id="page9">
+  <ion-content padding="true" class="has-header">
+    <div id="album-button-bar3" class="button-bar">
+      <a ui-sref="menu.album()" id="album-button17" class="button button-positive button-block">曲リスト</a>
+      <button id="album-button18" class="button button-positive button-block">アルバムを修正</button>
+      <a ui-sref="menu.player({album_id : album_id})" id="album-button19" class="button button-positive button-block">音楽鑑賞</a>
+    </div>
+    <ion-list id="album-list36">
+      <div ng-repeat="app in musiclist">
+          <ion-item class="item-thumbnail-left">
+             <img src="https://harmony-project-chonahoom.c9users.io/midi/{{midis[$index].path}}/{{midis[$index].img}}">
+            <h2>{{musiclist[$index].subject}}</h2>
+            <p>{{partician[$index]}}</p>
+          </ion-item>
+      </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

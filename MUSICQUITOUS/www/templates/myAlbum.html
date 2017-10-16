@@ -1,0 +1,22 @@
+<ion-view title="MyAlbum" id="page6">
+  <ion-content padding="true" class="has-header">
+  <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1" delegate-handle="slider1" id="myAlbum-slider1" style="width:100%;height:200px;">
+      
+     
+      <ion-slide-page id="myAlbum-slide24" ui-sref="menu.album({album_id : albums[0].album_number})" style="background:url(&quot;https://harmony-project-chonahoom.c9users.io/albumImages/{{albums[0].album_picture}}&quot;) no-repeat center;background-size:cover;" class="padding">
+        <ion-list id="myAlbum-list30">
+          <ion-item class="item-divider" id="myAlbum-list-item-divider2">{{albums[0].album_content}}</ion-item>
+        </ion-list>
+      </ion-slide-page>
+   
+      <ion-slide-page id="myAlbum-slide25" ui-sref="menu.album({album_id : albums[1].album_number})" style="background:url(&quot;https://harmony-project-chonahoom.c9users.io/albumImages/{{albums[1].album_picture}}&quot;) no-repeat center;background-size:cover;" class="padding">
+        <ion-list id="myAlbum-list31">
+          <ion-item class="item-divider" id="myAlbum-list-item-divider3">{{albums[1].album_content}}</ion-item>
+        </ion-list>
+      </ion-slide-page>
+
+    </ion-slides>
+    <button id="myAlbum-button13" style="font-size:55px;" class="button button-positive button-block">+</button>
+  </ion-content>
+</ion-view>
